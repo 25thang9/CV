@@ -2,292 +2,113 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <meta
-    name="description"
-    content="Portfolio cá nhân của Vũ Thị Thanh Thảo - sinh viên Vật lý, Vật lý Kỹ thuật, quan tâm đến Reinforcement Learning, Robotics và lập trình."
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trang web cá nhân của Vũ Thị Thanh Thảo">
   <title>Vũ Thị Thanh Thảo | Portfolio</title>
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-
-  <!-- HEADER -->
   <header class="site-header">
-
-    <a
-      class="logo"
-      href="#about"
-      aria-label="Trang chủ portfolio Vũ Thị Thanh Thảo"
-    >
-      VTTT
-    </a>
-
-    <nav
-      class="site-nav"
-      aria-label="Điều hướng chính"
-    >
-      <ul>
-        <li>
-          <a href="#about">Giới thiệu</a>
-        </li>
-
-        <li>
-          <a href="#skills">Kỹ năng</a>
-        </li>
-
-        <li>
-          <a href="#projects">Dự án</a>
-        </li>
-
-        <li>
-          <a href="#contact">Liên hệ</a>
-        </li>
-      </ul>
-    </nav>
-
+    <div class="container header-inner">
+      <a class="logo" href="#about">VTTT</a>
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-
-  <!-- MAIN -->
   <main class="container">
-
-    <!-- GIỚI THIỆU -->
-    <section
-      id="about"
-      class="hero"
-    >
-
-      <div class="hero-content">
-
-        <h1>Xin chào, mình là Thanh Thảo</h1>
-
+    <section id="about" class="section hero">
+      <div>
+        <p class="eyebrow">Xin chào, mình là</p>
+        <h1>Vũ Thị Thanh Thảo</h1>
         <p>
-          Mình là sinh viên năm 4 ngành Vật lý - Vật lý Kỹ thuật,
-          chuyên ngành Vật lý Tin học. Mình quan tâm đến lập trình,
-          Reinforcement Learning, Deep Learning, Robotics và phát triển
-          các ứng dụng kỹ thuật bằng phần mềm.
+          Mình là sinh viên năm 4 chuyên ngành Vật lý Tin học, quan tâm đến lập trình, xử lý dữ liệu,
+          mô phỏng và phát triển các ứng dụng web đơn giản.
         </p>
-
-        <a
-          class="button"
-          href="#contact"
-        >
-          Liên hệ với mình
-        </a>
-
+        <a class="button" href="#projects">Xem dự án</a>
       </div>
 
-      <div class="hero-image">
-
-        <img
-          src="VLVLKT-23130073-Vũ Thị Thanh Thảo.JPG"
-          alt="Ảnh chân dung của Vũ Thị Thanh Thảo"
-        >
-
-      </div>
-
+      <img
+        class="profile-image"
+        src="VLVLKT-23130073-Vũ Thị Thanh Thảo.JPG"
+        alt="Ảnh chân dung Vũ Thị Thanh Thảo"
+      >
     </section>
 
-
-    <!-- KỸ NĂNG -->
-    <section
-      id="skills"
-      class="section"
-    >
-
+    <section id="skills" class="section">
       <h2>Kỹ năng</h2>
-
       <ul class="tags">
         <li>Python</li>
-        <li>Reinforcement Learning</li>
-        <li>Deep Learning</li>
-        <li>Robotics</li>
+        <li>C/C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
         <li>MATLAB</li>
-        <li>Phát triển phần mềm</li>
+        <li>Git & GitHub</li>
       </ul>
-
     </section>
 
-
-    <!-- DỰ ÁN -->
-    <section
-      id="projects"
-      class="section"
-    >
-
+    <section id="projects" class="section">
       <h2>Dự án và đề tài</h2>
 
-      <div class="projects">
-
-        <!-- PROJECT 1 -->
-        <article class="card">
-
-          <h3>
-            Điều khiển chân robot 3-DOF bằng Reinforcement Learning
-          </h3>
-
-          <p>
-            Nghiên cứu sử dụng Reinforcement Learning để điều khiển
-            chuyển động của chân robot nhân hình 3 bậc tự do trong môi
-            trường mô phỏng, hướng đến khả năng thích nghi khi điều kiện
-            ma sát thay đổi.
-          </p>
-
-        </article>
-
-
-        <!-- PROJECT 2 -->
-        <article class="card">
-
-          <h3>
-            Mô phỏng Reinforcement Learning bằng Python
-          </h3>
-
-          <p>
-            Xây dựng môi trường mô phỏng bằng Python và huấn luyện agent
-            học cách lựa chọn hành động nhằm tối ưu phần thưởng trong
-            quá trình tương tác với môi trường.
-          </p>
-
-        </article>
-
-
-        <!-- PROJECT 3 -->
-        <article class="card">
-
-          <h3>
-            Nhận diện hình ảnh bằng Deep Learning
-          </h3>
-
-          <p>
-            Xây dựng và huấn luyện mô hình mạng nơ-ron bằng Python nhằm
-            tìm hiểu quy trình tiền xử lý dữ liệu, huấn luyện mô hình
-            và đánh giá khả năng nhận diện hình ảnh.
-          </p>
-
-        </article>
-
+      <div class="project-search">
+        <label for="search">Tìm dự án</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="Nhập tên dự án..."
+          autocomplete="off"
+        >
       </div>
 
+      <div id="filters" class="filters" aria-label="Lọc dự án"></div>
+
+      <ul id="project-list" class="projects"></ul>
+
+      <template id="project-card">
+        <li class="card">
+          <h3></h3>
+          <p class="project-tags"></p>
+        </li>
+      </template>
     </section>
 
-
-    <!-- LIÊN HỆ -->
-    <section
-      id="contact"
-      class="section"
-    >
-
+    <section id="contact" class="section">
       <h2>Liên hệ</h2>
+      <p>Nếu muốn trao đổi về học tập hoặc dự án, bạn có thể để lại thông tin bên dưới.</p>
 
-      <p>
-        Nếu bạn muốn trao đổi về học tập, lập trình, Reinforcement
-        Learning hoặc Robotics, bạn có thể gửi lời nhắn cho mình.
-      </p>
+      <form class="contact-form">
+        <label for="name">Họ và tên</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
 
-      <form>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
 
-        <div class="field">
+        <label for="message">Nội dung</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-          <label for="name">
-            Họ tên
-          </label>
-
-          <input
-            id="name"
-            name="name"
-            type="text"
-            autocomplete="name"
-            required
-          >
-
-        </div>
-
-
-        <div class="field">
-
-          <label for="email">
-            Email
-          </label>
-
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            required
-          >
-
-        </div>
-
-
-        <div class="field">
-
-          <label for="msg">
-            Lời nhắn
-          </label>
-
-          <textarea
-            id="msg"
-            name="msg"
-            rows="5"
-            required
-          ></textarea>
-
-        </div>
-
-
-        <button
-          class="button"
-          type="submit"
-        >
-          Gửi lời nhắn
-        </button>
-
+        <button type="submit">Gửi</button>
       </form>
-
     </section>
-
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="site-footer">
-
-    <p>
-      © 2026 Vũ Thị Thanh Thảo
-    </p>
-
-    <div class="footer-links">
-
-      <a
-        href="https://github.com/25thang9"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub của Thanh Thảo
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/thảo-vũ-434aa7296"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn của Thanh Thảo
-      </a>
-
+    <div class="container footer-inner">
+      <p>© 2026 Vũ Thị Thanh Thảo</p>
+      <p>
+        <a href="https://github.com/25thang9" target="_blank" rel="noreferrer">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/th%E1%BA%A3o-v%C5%A9-434aa7296" target="_blank" rel="noreferrer">LinkedIn</a>
+      </p>
     </div>
-
   </footer>
 
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
