@@ -11,12 +11,25 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#about">VTTT</a>
+
       <nav aria-label="Điều hướng chính">
         <ul class="nav-list">
           <li><a href="#about">Giới thiệu</a></li>
           <li><a href="#skills">Kỹ năng</a></li>
           <li><a href="#projects">Dự án</a></li>
           <li><a href="#contact">Liên hệ</a></li>
+          <li>
+            <button
+              id="theme-toggle"
+              class="theme-toggle"
+              type="button"
+              aria-pressed="false"
+              aria-label="Bật chế độ tối"
+              title="Bật chế độ tối"
+            >
+              <span class="theme-bulb" aria-hidden="true">💡</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
@@ -28,15 +41,15 @@
         <p class="eyebrow">Xin chào, mình là</p>
         <h1>Vũ Thị Thanh Thảo</h1>
         <p>
-          Mình là sinh viên năm 4 chuyên ngành Vật lý Tin học, quan tâm đến lập trình, xử lý dữ liệu,
-          mô phỏng và phát triển các ứng dụng web đơn giản.
+          Mình là sinh viên năm 4 chuyên ngành Vật lý Tin học, quan tâm đến lập trình,
+          xử lý dữ liệu, mô phỏng và phát triển các ứng dụng web đơn giản.
         </p>
-        <a class="button" href="#projects">Xem dự án</a>
+        <a class="button" href="#contact">Liên hệ</a>
       </div>
 
       <img
         class="profile-image"
-        src="VLVLKT-23130073-Vũ Thị Thanh Thảo.JPG"
+        src="./VLVLKT-23130073-Vũ Thị Thanh Thảo.JPG"
         alt="Ảnh chân dung Vũ Thị Thanh Thảo"
       >
     </section>
@@ -50,7 +63,7 @@
         <li>CSS</li>
         <li>JavaScript</li>
         <li>MATLAB</li>
-        <li>Git & GitHub</li>
+        <li>Git &amp; GitHub</li>
       </ul>
     </section>
 
@@ -83,7 +96,7 @@
       <h2>Liên hệ</h2>
       <p>Nếu muốn trao đổi về học tập hoặc dự án, bạn có thể để lại thông tin bên dưới.</p>
 
-      <form class="contact-form">
+      <form id="contact-form" class="contact-form" novalidate>
         <label for="name">Họ và tên</label>
         <input id="name" name="name" type="text" autocomplete="name" required>
 
@@ -94,6 +107,7 @@
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Gửi</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
@@ -104,7 +118,7 @@
       <p>
         <a href="https://github.com/25thang9" target="_blank" rel="noreferrer">GitHub</a>
         <span aria-hidden="true">·</span>
-        <a href="https://www.linkedin.com/in/th%E1%BA%A3o-v%C5%A9-434aa7296" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/thảo-vũ-434aa7296" target="_blank" rel="noreferrer">LinkedIn</a>
       </p>
     </div>
   </footer>
